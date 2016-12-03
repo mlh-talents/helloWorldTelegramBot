@@ -15,16 +15,21 @@
     "hello"
   ],
   "author": "MLH-Talents team",
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Jan Bucher",
       "email": "jan@jan-bucher.ch"
-   },
-   {
+    },
+    {
       "name": "Brian Boss",
       "email": "brianbossdennis@gmail.com"
-   }],
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mlh-talents/helloWorldTelegramBot/issues"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }
