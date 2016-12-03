@@ -7,8 +7,7 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/plain'});
 
    // Send the response body as "Hello World"
-   response.end('Hello World\n');
-   response.end('ihr sind alli doof\n');
+   response.end('Hello World\n Random add test');
 }).listen(8081);
 
 // Console will print the message
