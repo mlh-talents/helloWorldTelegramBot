@@ -4,7 +4,7 @@ var TelegramBot = require('node-telegram-bot-api');
 var telegramTokenReader = require('fs');
 
 // load token from file
-var token = telegramTokenReader.readFileSync('../telegram_token.secret');
+var token = telegramTokenReader.readFileSync('telegram_token.secret');
 
 // Create a bot that uses 'polling' to fetch new updates
 var bot = new TelegramBot(token, { polling: true });
