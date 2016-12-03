@@ -5,8 +5,8 @@ var telegramTokenReader = require('fs');
 
 // load token from file
 var token = telegramTokenReader.readFileSync('telegram_token.secret');
-console.log(token);
-const bot = new TeleBot('token');
+console.log('token: ' + token);
+const bot = new TeleBot(token.toString());
 
 bot.on('text', msg => {
   let fromId = msg.from.id;
