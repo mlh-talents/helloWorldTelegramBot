@@ -1,0 +1,30 @@
+{
+  "name": "helloWorldTelegramBot",
+  "version": "0.0.0",
+  "description": "Hello World project for programming a telegram bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlh-talents/helloWorldTelegramBot.git"
+  },
+  "keywords": [
+    "telegram",
+    "hello"
+  ],
+  "author": "MLH-Talents team",
+  "contributors": [{
+      "name": "Jan Bucher",
+      "email": "jan@jan-bucher.ch"
+   },
+   {
+      "name": "Brian Boss",
+      "email": "brianbossdennis@gmail.com"
+   }
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlh-talents/helloWorldTelegramBot/issues"
+  }
+}
