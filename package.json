@@ -30,7 +30,6 @@
     "url": "https://github.com/mlh-talents/helloWorldTelegramBot/issues"
   },
   "dependencies": {
-    "node-telegram-bot-api": "^0.24.0",
     "telebot": "^1.0.6"
   }
 }
