@@ -1,18 +1,18 @@
-console.log("Hello to the helloworld telegram bot module");
+'use strict';
 
-var TelegramBot = require('node-telegram-bot-api');
+const TeleBot = require('telebot');
 var telegramTokenReader = require('fs');
 
 // load token from file
 var token = telegramTokenReader.readFileSync('telegram_token.secret');
+console.log('token: ' + token);
+const bot = new TeleBot(token.toString());
 
-// Create a bot that uses 'polling' to fetch new updates
-var bot = new TelegramBot(token, { polling: true });
-
-// respond on "/echo"
-bot.onText(/\/echo (.+)/, function (msg, match) {
-  var chatId = msg.chat.id;
-  var resp = "Hello world from MLH event :)";
-
-  bot.sendMessage(chatId, resp);
+bot.on('text', msg => {
+  let fromId = msg.from.id;
+  let firstName = msg.from.first_name;
+  let reply = msg.message_id;
+  return bot.sendMessage(fromId, 'Welcome, ${ firstName }!', { reply });
 });
+
+bot.connect();
