@@ -1,1 +1,1 @@
-console.log("Hello World from MLH :)")
+console.log("Hello World from MLH :)");
